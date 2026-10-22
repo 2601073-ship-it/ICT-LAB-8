@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form>
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname" placeholder="Enter full name" required><br><br>
+
+        <label>Father's Name:</label><br>
+        <input type="text" name="fathername" placeholder="Enter father's name" required><br><br>
+
+        <label>Registration Number:</label><br>
+        <input type="text" name="registration" placeholder="Enter registration number" required><br><br>
+
+        <label>Email Address:</label><br>
+        <input type="email" name="email" placeholder="Enter email address" required><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" placeholder="Enter password" required><br><br>
+
+        <label>Confirm Password:</label><br>
+        <input type="password" name="confirm_password" placeholder="Confirm password" required><br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" name="dob" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other<br><br>
+
+        <label>Department:</label><br>
+        <select name="department" required>
+            <option value="">Select Department</option>
+            <option>BSSE</option>
+            <option>BSAI</option>
+            <option>BSDS</option>
+            <option>BSCS</option>
+        </select><br><br>
+
+        <label>Semester:</label><br>
+        <select name="semester" required>
+            <option value="">Select Semester</option>
+            <option>1st</option>
+            <option>2nd</option>
+            <option>3rd</option>
+            <option>4th</option>
+            <option>5th</option>
+            <option>6th</option>
+            <option>7th</option>
+            <option>8th</option>
+        </select><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" name="phone" placeholder="Enter phone number" required><br><br>
+
+        <label>Permanent Address:</label><br>
+        <textarea name="address" rows="3" placeholder="Enter permanent address" required></textarea><br><br>
+
+        <label>Profile Picture:</label><br>
+        <input type="file" name="picture" accept="image/*"><br><br>
+
+        <input type="checkbox" name="terms" required>
+        <label>I agree to the Terms and Conditions</label><br><br>
+
+        <button type="submit" class="register">Register</button>
+        <button type="reset" class="reset">Reset</button>
+    </form>
+
+</body>
+</html>
